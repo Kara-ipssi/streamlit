@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - ./app:/app
+    ports:
+      - 8501:8501
